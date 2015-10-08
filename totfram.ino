@@ -123,10 +123,4 @@ void serialEvent1() {
   }
 }
 
-void serialEvent() {
-  while (Serial.available()) {
-    char inChar = (char)Serial.read();
-    if(inChar=='R')state = operate;
-    if(inChar=='S')state = setting;   
-  }
-}
+
